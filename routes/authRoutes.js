@@ -28,6 +28,4 @@ router.get('/forgot-password', authController.getForgotPassword);
 router.post('/forgot-password', authController.forgotPassword);
 router.get('/reset-password', authController.getResetPassword);
 router.post('/reset-password', authController.resetPassword);
-
-
 module.exports = router;

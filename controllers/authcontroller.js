@@ -109,7 +109,6 @@ exports.postSignup = async (req, res) => {
       [name, email, hashedPassword, role || 'user', verificationToken]
     );
 
-
     // Send verification email
     const verificationLink = `http://localhost:${process.env.PORT}/verify-email?token=${verificationToken}`;
 
